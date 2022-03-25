@@ -58,3 +58,7 @@ console.log(idNameDict);
 
 // update students dict with age
 // const studentsWithAges = students.map(x => ())
+
+// using destructuring assignment with map
+let [Mark, ...rest] = students.map(student => ({"name": student.name, "skill":student.skill}));
+console.log([Mark, ...rest])
